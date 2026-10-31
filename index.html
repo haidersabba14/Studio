@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#090909" />
+    <meta
+      name="description"
+      content="Haider Studio — مكتبة تطبيقات iOS وAndroid. اكتشف الإصدارات، تفاصيل الملفات، وإرشادات التثبيت في مكان واحد."
+    />
+    <meta property="og:title" content="HAIDER STUDIO — تجربة تستحق التميّز" />
+    <meta
+      property="og:description"
+      content="مكتبة تطبيقات Haider Studio لأجهزة iOS وAndroid."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/social-card.png" />
+    <title>HAIDER STUDIO — تجربة تستحق التميّز</title>
+    <link rel="icon" href="assets/haider-logo-gold.png" type="image/png" />
+    <link
+      rel="preload"
+      href="assets/fonts/arabic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/admin.css" />
+    <script defer src="assets/apps-data.js"></script>
+    <script defer src="assets/site-config.js"></script>
+    <script defer src="assets/studio-content.js"></script>
+    <script defer src="assets/app.js"></script>
+    <script defer src="assets/admin.js"></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+    <div class="welcome" aria-hidden="true">
+      <span class="welcome-logo"
+        ><img
+          src="assets/haider-logo-gold.png"
+          alt=""
+          width="96"
+          height="96" /></span
+      ><span>HAIDER STUDIO</span><i></i>
+    </div>
+    <div class="ambient" aria-hidden="true"></div>
+    <div id="particles" aria-hidden="true"></div>
+    <header class="header">
+      <div class="container nav-shell">
+        <a class="brand" href="./" aria-label="Haider Studio — الرئيسية"
+          ><span class="brand-icon"
+            ><img
+              src="assets/haider-logo-gold.png"
+              alt=""
+              width="64"
+              height="64" /></span
+          ><span dir="ltr"
+            >HAIDER<span class="brand-studio">STUDIO</span></span
+          ></a
+        >
+        <nav id="navigation" aria-label="التنقل الرئيسي">
+          <a class="active" href="#home" data-i18n="home">الرئيسية</a
+          ><a href="#montage" data-i18n="montage">المونتاج</a
+          ><a href="#features" data-i18n="features">المميزات</a
+          ><a href="#updates" data-i18n="updates">التحديثات</a
+          ><a href="#about" data-i18n="about">من نحن</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-button notification-button"
+            id="notifications-toggle"
+            aria-label="التحديثات"
+            aria-expanded="false"
+            aria-controls="notifications"
+          >
+            <svg><use href="assets/icons.svg#bell" /></svg
+            ><span class="notification-dot" hidden></span></button
+          ><span class="nav-divider"></span
+          ><button
+            class="language-button"
+            id="language-toggle"
+            aria-label="Switch to English"
+          >
+            EN <svg><use href="assets/icons.svg#globe" /></svg></button
+          ><button
+            class="menu-toggle icon-button"
+            id="menu-toggle"
+            aria-label="فتح القائمة"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <svg><use href="assets/icons.svg#menu" /></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <aside
+      class="notifications"
+      id="notifications"
+      hidden
+      aria-labelledby="notification-heading"
+    >
+      <h2 id="notification-heading" data-i18n="releaseNews">
+        مستجدات الإصدارات
+      </h2>
+      <div id="notification-content"></div>
+      <button class="text-button" id="mark-read" data-i18n="markRead">
+        تحديد كمقروء
+      </button>
+    </aside>
+    <main id="main">
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="tiny-star">✦</span
+            ><span data-i18n="heroEyebrow">صُنع بشغف. ليليق بك.</span
+            ><span class="eyebrow-line"></span>
+          </div>
+          <h1>
+            <span data-i18n="heroTitle1">تجربة تستحق</span><br /><span
+              class="gold-text"
+              data-i18n="heroTitle2"
+              >التميّز.</span
+            >
+          </h1>
+          <p class="hero-description" data-i18n="heroDescription">
+            عالم Haider Studio بين يديك. اكتشف تطبيقاتنا لنظامَي iOS وAndroid،
+            وتعرّف على كل إصدار في تجربة واحدة، بسيطة وأنيقة.
+          </p>
+          <div class="hero-buttons">
+            <a href="#apps" class="button button-gold"
+              ><span data-i18n="exploreApps">استكشف التطبيقات</span
+              ><svg><use href="assets/icons.svg#arrow-left" /></svg></a
+            ><a href="#about" class="hero-secondary"
+              ><span class="play-icon"
+                ><svg><use href="assets/icons.svg#arrow-diagonal" /></svg></span
+              ><span data-i18n="meetStudio">تعرّف على الاستوديو</span></a
+            >
+          </div>
+          <div class="hero-meta">
+            <span
+              ><svg><use href="assets/icons.svg#apple" /></svg>iOS</span
+            ><span
+              ><svg><use href="assets/icons.svg#android" /></svg>Android</span
+            ><i></i><span data-i18n="twoPlatforms">نظامان. تجربة واحدة.</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="شعار Haider Studio الذهبي" role="img">
+          <div class="art-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <span class="art-star star-one">✦</span
+          ><span class="art-star star-two">✧</span
+          ><span class="art-star star-three">+</span>
+          <div class="floating-tag ios-tag">
+            <span class="platform-box"
+              ><svg><use href="assets/icons.svg#apple" /></svg></span
+            ><span
+              ><strong>iOS</strong
+              ><small data-i18n="iosEdition">إصدار iPhone</small></span
+            ><span class="tag-dot"></span>
+          </div>
+          <div class="app-sculpture">
+            <div class="sculpture-edge"></div>
+            <div class="sculpture-face">
+              <div class="sculpture-inner">
+                <img
+                  class="hero-logo"
+                  src="assets/haider-logo-gold.png"
+                  alt=""
+                  width="1280"
+                  height="1280"
+                  fetchpriority="high"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="floating-tag android-tag">
+            <span class="platform-box"
+              ><svg><use href="assets/icons.svg#android" /></svg></span
+            ><span
+              ><strong>Android</strong
+              ><small data-i18n="androidEdition">إصدار Android</small></span
+            ><span class="tag-dot"></span>
+          </div>
+          <div class="pedestal"><div></div></div>
+          <div class="art-caption">
+            <span></span>DESIGNED TO STAND OUT<span></span>
+          </div>
+        </div>
+        <a href="#apps" class="scroll-cue"
+          ><span data-i18n="scrollExplore">مرّر لتكتشف</span
+          ><svg><use href="assets/icons.svg#arrow-down" /></svg
+        ></a>
+      </section>
+      <div class="promise-bar">
+        <div class="container">
+          <span
+            ><svg><use href="assets/icons.svg#layers" /></svg
+            ><span data-i18n="promiseOne">كل الإصدارات في مكان واحد</span></span
+          ><i>✦</i
+          ><span
+            ><svg><use href="assets/icons.svg#file" /></svg
+            ><span data-i18n="promiseTwo">تفاصيل ملفات حقيقية</span></span
+          ><i>✦</i
+          ><span
+            ><svg><use href="assets/icons.svg#globe" /></svg
+            ><span data-i18n="promiseThree"
+              >تجربة بالعربية والإنجليزية</span
+            ></span
+          ><i>✦</i
+          ><span
+            ><svg><use href="assets/icons.svg#sparkles" /></svg
+            ><span data-i18n="promiseFour">بساطة في كل تفصيلة</span></span
+          >
+        </div>
+      </div>
+      <section class="section container" id="apps">
+        <span id="montage" class="section-anchor" aria-hidden="true"></span>
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span class="tiny-star">✦</span
+              ><span data-i18n="libraryEyebrow">مختارة لك</span>
+            </div>
+            <h2 data-i18n="montageTitle">
+              المونتاج<span class="gold-text">.</span>
+            </h2>
+            <p data-i18n="montageDescription">
+              اختر نظامك، واكتشف إصدار Haider Studio المناسب لجهازك.
+            </p>
+          </div>
+          <span class="section-index" dir="ltr">01 / THE COLLECTION</span>
+        </div>
+        <div class="library-toolbar">
+          <div class="filter-group" role="group" aria-label="تصفية حسب النظام">
+            <button
+              class="filter active"
+              data-filter="all"
+              aria-pressed="true"
+              data-i18n="allPlatforms"
+            >
+              كل التطبيقات</button
+            ><button class="filter" data-filter="ios" aria-pressed="false">
+              <svg><use href="assets/icons.svg#apple" /></svg>iOS</button
+            ><button class="filter" data-filter="android" aria-pressed="false">
+              <svg><use href="assets/icons.svg#android" /></svg>Android
+            </button>
+          </div>
+          <div class="search-and-view">
+            <div class="search-box">
+              <svg><use href="assets/icons.svg#search" /></svg
+              ><input
+                id="app-search"
+                type="search"
+                placeholder="ابحث عن تطبيق..."
+                aria-label="ابحث عن تطبيق"
+                autocomplete="off"
+              /><kbd>/</kbd>
+            </div>
+            <button
+              class="view-toggle icon-button"
+              id="view-toggle"
+              aria-label="عرض مدمج"
+              aria-pressed="false"
+            >
+              <svg><use href="assets/icons.svg#grid" /></svg>
+            </button>
+          </div>
+        </div>
+        <div class="device-hint" id="device-hint" hidden></div>
+        <div class="app-grid" id="app-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <svg><use href="assets/icons.svg#search" /></svg>
+          <h3 data-i18n="noResults">لم نجد تطبيقًا بهذا الاسم</h3>
+          <p data-i18n="trySearch">جرّب كلمة أخرى أو اختر جميع التطبيقات.</p>
+          <button
+            id="reset-search"
+            class="button button-outline"
+            data-i18n="resetSearch"
+          >
+            مسح البحث
+          </button>
+        </div>
+        <div class="library-note">
+          <svg><use href="assets/icons.svg#info" /></svg>
+          <p data-i18n="libraryNote">
+            نعرض معلومات الملفات المتحقَّق منها فقط. يظهر رابط التحميل فور توفّر
+            الملف الأصلي.
+          </p>
+          <a href="#faq" data-i18n="installationHelp">مساعدة التثبيت ↗</a>
+        </div>
+      </section>
+      <section class="features-section" id="features">
+        <div class="container section">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">
+                <span class="tiny-star">✦</span
+                ><span data-i18n="detailsEyebrow">التفاصيل تصنع الفارق</span>
+              </div>
+              <h2 data-i18n="featuresTitle">كل ما تحتاجه. بكل بساطة.</h2>
+            </div>
+            <span class="section-index" dir="ltr">02 / THE EXPERIENCE</span>
+          </div>
+          <div class="feature-grid">
+            <article class="feature">
+              <span class="feature-number">01</span
+              ><span class="feature-icon"
+                ><svg><use href="assets/icons.svg#search" /></svg
+              ></span>
+              <h3 data-i18n="featureOneTitle">اعثر على إصدارك</h3>
+              <p data-i18n="featureOneText">
+                بحث فوري وتصفية حسب النظام، للوصول إلى التطبيق المناسب دون
+                تعقيد.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">02</span
+              ><span class="feature-icon"
+                ><svg><use href="assets/icons.svg#file" /></svg
+              ></span>
+              <h3 data-i18n="featureTwoTitle">اعرف ما تُحمّله</h3>
+              <p data-i18n="featureTwoText">
+                الإصدار وحجم الملف وبصمة التحقق، مستخرجة من الملف الأصلي عندما
+                يتوفر.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">03</span
+              ><span class="feature-icon"
+                ><svg><use href="assets/icons.svg#share" /></svg
+              ></span>
+              <h3 data-i18n="featureThreeTitle">شاركها بطريقتك</h3>
+              <p data-i18n="featureThreeText">
+                انسخ رابط التطبيق أو شاركه مباشرة عبر واتساب وتليجرام بنقرة
+                واحدة.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">04</span
+              ><span class="feature-icon"
+                ><svg><use href="assets/icons.svg#sliders" /></svg
+              ></span>
+              <h3 data-i18n="featureFourTitle">تجربة تشبهك</h3>
+              <p data-i18n="featureFourText">
+                اختر لغتك وطريقة العرض ومستوى الحركة. تُحفظ تفضيلاتك على جهازك
+                فقط.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section container updates-section" id="updates">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span class="tiny-star">✦</span
+              ><span data-i18n="updatesEyebrow">ابقَ على اطّلاع</span>
+            </div>
+            <h2 data-i18n="updatesTitle">
+              آخر التحديثات<span class="gold-text">.</span>
+            </h2>
+            <p data-i18n="updatesDescription">
+              معلومات أحدث الملفات المنشورة، مباشرة من مكتبة التطبيقات.
+            </p>
+          </div>
+          <span class="section-index" dir="ltr">03 / WHAT’S NEW</span>
+        </div>
+        <div id="updates-list" class="updates-list"></div>
+        <div id="release-history"></div>
+      </section>
+      <section class="about-section container" id="about">
+        <div class="about-art" aria-hidden="true">
+          <span class="about-frame"></span>
+          <div class="about-monogram">
+            <img
+              src="assets/haider-logo-gold.png"
+              alt=""
+              width="260"
+              height="260"
+              loading="lazy"
+            />
+          </div>
+          <span class="about-art-label">A STUDIO. A SIGNATURE.</span>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">
+            <span class="tiny-star">✦</span
+            ><span data-i18n="aboutEyebrow">وراء التجربة</span>
+          </div>
+          <h2 data-i18n="aboutTitle">بصمة خاصة.<br />في كل تفصيلة.</h2>
+          <p data-i18n="aboutText">
+            Haider Studio مساحة تجمع تطبيقات الاستوديو وإصداراتها في وجهة واحدة.
+            نؤمن بأن التجربة الجيدة تبدأ من الوضوح: معلومات تعرفها، وخطوات
+            تفهمها، وتصميم يمنح كل تفصيلة حقّها.
+          </p>
+          <a href="#contact" class="text-link"
+            ><span data-i18n="contactUs">تواصل معنا</span
+            ><svg><use href="assets/icons.svg#arrow-left" /></svg></a
+          ><span class="about-signature" dir="ltr">Haider Studio</span>
+        </div>
+      </section>
+      <section class="section container faq-section" id="faq">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span class="tiny-star">✦</span
+              ><span data-i18n="faqEyebrow">نجيب عن تساؤلاتك</span>
+            </div>
+            <h2 data-i18n="faqTitle">
+              قبل أن تبدأ<span class="gold-text">.</span>
+            </h2>
+          </div>
+          <span class="section-index" dir="ltr">04 / GOOD TO KNOW</span>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              <span data-i18n="faq1q">كيف أثبّت ملف IPA على iPhone؟</span
+              ><span>+</span>
+            </summary>
+            <p data-i18n="faq1a">
+              تنزيل ملف IPA لا يثبّته تلقائيًا. تحتاج إلى وسيلة تثبيت موثوقة
+              وتوقيع صالح يتوافق مع جهازك، مثل أدوات التحميل الجانبي التي
+              تختارها. لا تشارك كلمة مرور Apple ID مع هذا الموقع. تحقّق من
+              صلاحية التوقيع والتوافق قبل التثبيت.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span data-i18n="faq2q">كيف أثبّت تطبيق Android؟</span
+              ><span>+</span>
+            </summary>
+            <p data-i18n="faq2a">
+              حمّل ملف APK المتاح، ثم افتحه على جهاز Android. قد يطلب النظام
+              السماح بالتثبيت من هذا المصدر؛ امنح الإذن عند ثقتك بالملف وألغِه
+              بعد الانتهاء. ملف app-debug.apk إصدار تطوير وليس إصدار متجر؛ راجع
+              تفاصيله قبل استخدامه.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span data-i18n="faq3q">لماذا لا يظهر زر تحميل فعّال؟</span
+              ><span>+</span>
+            </summary>
+            <p data-i18n="faq3a">
+              يُفعَّل التحميل فقط بعد إضافة الملف الأصلي والتحقّق منه أثناء
+              تجهيز الموقع. إذا ظهر «بانتظار الملف»، فالنسخة غير منشورة بعد. لا
+              نستخدم روابط تنزيل تجريبية أو معلومات إصدار تقديرية.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span data-i18n="faq4q"
+                >هل يطلب الموقع صلاحيات أو يتتبّع التنزيلات؟</span
+              ><span>+</span>
+            </summary>
+            <p data-i18n="faq4a">
+              لا يطلب الموقع حسابًا أو إذنًا للإشعارات ولا يستخدم إحصاءات تنزيل.
+              تحفظ اللغة والعرض والحركة ومسودة التواصل محليًا في متصفحك. لا
+              تنتقل رسالتك إلى أي خدمة إلا عند تهيئة خدمة تواصل وإرسالها
+              بواسطتك.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span data-i18n="faq5q">كيف أعرف بوجود إصدار جديد؟</span
+              ><span>+</span>
+            </summary>
+            <p data-i18n="faq5a">
+              عند فتح الموقع أو عودتك إليه، يتحقّق من قائمة الإصدارات. إذا تغيّر
+              أحد الملفات منذ زيارتك السابقة، يظهر تنبيه داخل الموقع. لا توجد
+              إشعارات خارج المتصفح أو في الخلفية.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="section container" id="contact">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <div class="eyebrow">
+              <span class="tiny-star">✦</span
+              ><span data-i18n="contactEyebrow">الحوار بداية كل شيء</span>
+            </div>
+            <h2 data-i18n="contactTitle">
+              لديك سؤال؟<br /><span class="gold-text">نحن نسمعك.</span>
+            </h2>
+            <p id="contact-status"></p>
+            <div class="contact-note">
+              <svg><use href="assets/icons.svg#lock" /></svg
+              ><span data-i18n="contactPrivacy"
+                >بياناتك تخصّك. راجع سياسة الخصوصية لمعرفة طريقة التعامل
+                معها.</span
+              >
+            </div>
+            <a href="privacy.html" class="text-link" data-i18n="privacy"
+              >سياسة الخصوصية</a
+            >
+          </div>
+          <form id="contact-form">
+            <div class="form-row">
+              <label
+                ><span data-i18n="yourName">الاسم</span
+                ><input
+                  name="name"
+                  id="contact-name"
+                  maxlength="100"
+                  autocomplete="name"
+                  required
+                  placeholder="اسمك الكريم" /></label
+              ><label
+                ><span data-i18n="yourEmail">البريد الإلكتروني</span
+                ><input
+                  name="email"
+                  type="email"
+                  id="contact-email"
+                  maxlength="254"
+                  autocomplete="email"
+                  required
+                  placeholder="you@example.com"
+                  dir="ltr"
+              /></label>
+            </div>
+            <label
+              ><span data-i18n="yourMessage">رسالتك</span
+              ><textarea
+                name="message"
+                id="contact-message"
+                rows="4"
+                maxlength="5000"
+                required
+                placeholder="كيف يمكننا مساعدتك؟"
+              ></textarea>
+            </label>
+            <div class="contact-actions">
+              <button
+                class="button button-gold"
+                type="submit"
+                id="contact-submit"
+              >
+                <span data-i18n="saveDraft">حفظ المسودة على جهازي</span
+                ><svg><use href="assets/icons.svg#arrow-left" /></svg></button
+              ><button
+                class="text-button"
+                type="button"
+                id="copy-message"
+                data-i18n="copyMessage"
+              >
+                نسخ الرسالة</button
+              ><button
+                class="text-button"
+                type="button"
+                id="delete-draft"
+                data-i18n="deleteDraft"
+              >
+                حذف المسودة
+              </button>
+            </div>
+            <p class="form-feedback" id="form-feedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-main">
+        <a class="brand" href="#home"
+          ><span class="brand-icon"
+            ><img
+              src="assets/haider-logo-gold.png"
+              alt=""
+              width="64"
+              height="64" /></span
+          ><span dir="ltr"
+            >HAIDER<span class="brand-studio">STUDIO</span></span
+          ></a
+        >
+        <p data-i18n="footerLine">بشغف نصنع التجربة. وبالتفاصيل نترك الأثر.</p>
+        <a href="#apps" class="text-link"
+          ><span data-i18n="exploreApps">استكشف التطبيقات</span
+          ><svg><use href="assets/icons.svg#arrow-diagonal" /></svg
+        ></a>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year">2026</span> HAIDER STUDIO</span>
+        <div>
+          <a href="privacy.html" data-i18n="privacy">سياسة الخصوصية</a
+          ><a href="terms.html" data-i18n="terms">الشروط والأحكام</a
+          ><button
+            class="text-button"
+            id="motion-toggle"
+            aria-pressed="false"
+            data-i18n="reduceMotion"
+          >
+            تقليل الحركة
+          </button>
+        </div>
+        <span class="footer-signature"
+          >CRAFTED WITH INTENTION <span>✦</span></span
+        >
+      </div>
+    </footer>
+    <a
+      href="#home"
+      id="back-top"
+      class="back-top icon-button"
+      aria-label="العودة لأعلى"
+      ><svg><use href="assets/icons.svg#arrow-up" /></svg
+    ></a>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><div class="noscript-note">
+        يرجى تفعيل JavaScript للبحث وعرض معلومات الملفات.
+        <a href="privacy.html">سياسة الخصوصية</a>
+      </div></noscript
+    >
+  </body>
+</html>
